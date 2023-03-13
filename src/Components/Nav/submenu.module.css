@@ -1,0 +1,12 @@
+.submenu {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: none;
+  width: 180px;
+  background-color: aquamarine;
+}
+
+.show {
+  display: block;
+}

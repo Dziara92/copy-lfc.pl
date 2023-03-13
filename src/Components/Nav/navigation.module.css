@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 65px;
+  position: relative;
+}
+
+.menuLeft > li,
+.menuRight > li {
+  font-family: "DM Sans";
+  font-weight: 500;
+  color: white;
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.menuLeft > li:hover,
+.menuRight > li:hover {
+  border-bottom: 2px solid #ce0d29;
+}
