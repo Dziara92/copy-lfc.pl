@@ -6,25 +6,30 @@ function Navigation() {
   const { menuLeft, menuRight, openSubmenu, closeSubmenu } = useGlobalContext();
 
   const displeySubmenu = (e) => {
-    openSubmenu();
+    const page = e.target.textContent;
+    const tempLi = e.target.getBoundingClientRect();
+    const center = (tempLi.left + tempLi.right) / 2;
+    const bottom = tempLi.bottom - 65;
+    openSubmenu(page, { center, bottom });
   };
 
   return (
     <div className={style.container}>
       <ul className={style.menuLeft}>
         {menuLeft.map((itemMenu, index) => {
-          const { menu } = itemMenu;
+          const { page} = itemMenu;
           return (
             <li key={index} onMouseOver={displeySubmenu}>
-              {menu}
+              {page}
             </li>
           );
         })}
       </ul>
+
       <ul className={style.menuRight}>
         {menuRight.map((itemMenu, index) => {
-          const { menu } = itemMenu;
-          return <li key={index}>{menu}</li>;
+          const { page } = itemMenu;
+          return <li key={index}>{page}</li>;
         })}
       </ul>
       <Submenu />

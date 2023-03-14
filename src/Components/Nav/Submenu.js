@@ -1,28 +1,32 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { useGlobalContext } from "../../context";
 import style from "./submenu.module.css";
 
 const Submenu = () => {
-  const { menuLeft, hoverSubmenu } = useGlobalContext();
+  const {
+    ishoverSubmenu,
+    location,
+    page: { page, links = [] },
+  } = useGlobalContext();
+  const container = useRef(null);
+
+  useEffect(() => {
+    const { center, bottom } = location;
+    const submenu = container.current;
+    submenu.style.left = `${center}px`;
+    submenu.style.top = `${bottom}px`;
+  }, [location]);
 
   return (
     <div
       className={
-        hoverSubmenu ? `${style.submenu} ${style.show}` : style.submenu
+        ishoverSubmenu ? `${style.submenu} ${style.show}` : style.submenu
       }
+      ref={container}
     >
-      {menuLeft.map((item) => {
-        const { links } = item;
-        if (links) {
-          return links.map((link, index) => {
-            const { label, url } = link;
-            return (
-              <li key={index}>
-                <a href={url}>{label}</a>
-              </li>
-            );
-          });
-        }
+      {links.map((link, index) => {
+        const { label, url } = link;
+        return <li key={index}>{label}</li>;
       })}
     </div>
   );
