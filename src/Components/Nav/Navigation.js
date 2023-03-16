@@ -17,7 +17,7 @@ function Navigation() {
     <div className={style.container}>
       <ul className={style.menuLeft}>
         {menuLeft.map((itemMenu, index) => {
-          const { page} = itemMenu;
+          const { page } = itemMenu;
           return (
             <li key={index} onMouseOver={displeySubmenu}>
               {page}

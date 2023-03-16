@@ -12,7 +12,7 @@ export const AppProvider = ({ children }) => {
     const page = menuLeft.find((link) => link.page === text);
     setPage(page);
     setLocation(coordinates);
-    setHoverSubmenu(true);
+    setHoverSubmenu(false); //powinno być true
   };
   const closeSubmenu = () => {
     setHoverSubmenu(false);
