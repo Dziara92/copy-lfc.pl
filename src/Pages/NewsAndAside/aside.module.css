@@ -1,0 +1,41 @@
+.aside {
+  width: 80%;
+  margin-left: 50px;
+}
+
+.aside span {
+  display: block;
+  background-color: #dbdbdb;
+  width: 50%;
+  height: auto;
+  margin: 0;
+}
+
+.aside span p {
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.aside .content {
+  background-color: #dbdbdb;
+}
+.aside .content ul {
+  padding: 30px;
+}
+.aside .content li {
+  list-style: none;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-bottom: solid 1px #d1d1d1;
+  font-size: 14px;
+  font-weight: 700;
+  color: #181818;
+  cursor: pointer;
+}
+.aside .content li:hover {
+  text-decoration: underline;
+  background-color: #d1d1d1;
+}

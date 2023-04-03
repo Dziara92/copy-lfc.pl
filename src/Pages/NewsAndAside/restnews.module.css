@@ -1,0 +1,27 @@
+.rest_news {
+  display: flex;
+  margin-bottom: 20px;
+  width: 90%;
+}
+
+.content {
+  width: 100%;
+  margin-left: 30px;
+}
+.rest_news .content h3 {
+  font-size: 18px;
+}
+
+.rest_news .content h3:hover {
+  text-decoration: underline 1px;
+}
+
+.rest_news .content .shorttext {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.rest_news .content .footer {
+  font-size: 12px;
+  color: #8c8c8c;
+}

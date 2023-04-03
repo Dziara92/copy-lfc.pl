@@ -1,0 +1,42 @@
+.wrappernews {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 0 30px 0 70px;
+}
+
+.news {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.news img {
+  width: 60%;
+}
+
+.content {
+  margin: 40px 0 0 40px;
+  width: 40%;
+}
+h3 {
+  font-size: 27px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+h3:hover {
+  text-decoration: underline 2px;
+}
+
+.shorttext {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.footer {
+  color: #9b9b9b;
+  font-size: 12px;
+}
+
+.rest_news_and_aside {
+  display: flex;
+}
