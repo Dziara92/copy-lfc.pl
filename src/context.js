@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { menuLeft, menuRight } from "./Data";
+import { menuLeft, menuRight, news, forum } from "./Data";
 
 const AppContext = React.createContext();
 
@@ -29,6 +29,8 @@ export const AppProvider = ({ children }) => {
         closeSubmenu,
         location,
         page,
+        news,
+        forum,
       }}
     >
       {children}
