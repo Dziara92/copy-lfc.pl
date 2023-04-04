@@ -125,4 +125,21 @@ const news = [
   },
 ];
 
-export { menuLeft, menuRight, news, forum };
+const table = [
+  {
+    place: "1",
+    team: "ars",
+    games: "24",
+    score: "64",
+    id: 1,
+  },
+  {
+    place: "2",
+    team: "LIV",
+    games: "24",
+    score: "34",
+    id: 2,
+  },
+];
+
+export { menuLeft, menuRight, news, forum, table };

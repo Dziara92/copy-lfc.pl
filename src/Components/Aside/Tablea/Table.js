@@ -1,21 +1,24 @@
 import React from "react";
 import { useState } from "react";
+import { useGlobalContext } from "../../../context";
 import style from "./table.module.css";
 
 const Table = () => {
+  const { table } = useGlobalContext();
   const [selectedTable, setSelectedTable] = useState(true);
   const [selectedScore, setSelectedScore] = useState(false);
 
-  const handleSelectedTable = () => {
-    if (selectedTable === false) {
+  const handleSelected = (e) => {
+    const select = e.target.textContent;
+    if (select === "Tabela") {
       setSelectedTable(true);
       setSelectedScore(false);
+      return;
     }
-  };
-  const handleSelectedScore = () => {
-    if (selectedScore === false) {
-      setSelectedScore(true);
+    if (select === "Strzelcy") {
       setSelectedTable(false);
+      setSelectedScore(true);
+      return;
     }
   };
 
@@ -24,19 +27,32 @@ const Table = () => {
       <div className={style.table_top}>
         <p
           className={selectedTable ? style.selected : null}
-          onClick={handleSelectedTable}
+          onClick={(e) => handleSelected(e)}
         >
           Tabela
         </p>
         <p
           className={selectedScore ? style.selected : null}
-          onClick={handleSelectedScore}
+          onClick={(e) => handleSelected(e)}
         >
           Strzelcy
         </p>
       </div>
       <div className={style.table}>
-        {selectedTable && <p>tabbb</p>}
+        {selectedTable && (
+          <table>
+            {table.map((item) => {
+              return (
+                <tr key={item.id}>
+                  <td>{item.place}</td>
+                  <td>{item.team}</td>
+                  <td>{item.games}</td>
+                  <td>{item.score}</td>
+                </tr>
+              );
+            })}
+          </table>
+        )}
         {selectedScore && <p>score</p>}
       </div>
     </div>
