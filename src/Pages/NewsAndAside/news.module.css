@@ -40,3 +40,35 @@ h3:hover {
 .rest_news_and_aside {
   display: flex;
 }
+
+.rest_news_and_aside .left_div {
+  width: 75%;
+}
+.rest_news_and_aside .aside {
+  width: 25%;
+}
+
+.btn_archiwum {
+  display: block;
+  margin: 40px auto;
+  background: linear-gradient(
+    90deg,
+    rgba(248, 63, 68, 1) 0,
+    rgba(245, 25, 87, 1) 100%
+  );
+  border: none;
+  border-radius: 40px;
+  padding: 10px 30px;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 500;
+  font-family: "DM Sans";
+  cursor: pointer;
+}
+.btn_archiwum:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(245, 25, 87, 1) 0,
+    rgba(248, 63, 68, 1) 100%
+  );
+}

@@ -1,3 +1,5 @@
+import mainFoto from "./images/jesperlindstrom.jpg";
+
 const menuLeft = [
   {
     page: "Aktualności",
@@ -20,40 +22,106 @@ const menuRight = [
 ];
 
 const forum = [
-  { title: "Byli piłkarze Liverpoolu w nowych klubach" },
-  { title: "Luźne dyskusje odnośnie Liverpoolu" },
-  { title: "Trent Alexander-Arnold" },
-  { title: "Seria A" },
-  { title: "Jürgen Klopp" },
-  { title: "Luźne dyskusje odnośnie Liverpoolu" },
-  { title: "Byli piłkarze Liverpoolu w nowych klubach" },
-  { title: "Trent Alexander-Arnold" },
+  { title: "Byli piłkarze Liverpoolu w nowych klubach", id: 1 },
+  { title: "Luźne dyskusje odnośnie Liverpoolu", id: 2 },
+  { title: "Trent Alexander-Arnold", id: 3 },
+  { title: "Seria A", id: 4 },
+  { title: "Jürgen Klopp", id: 8 },
+  { title: "Luźne dyskusje odnośnie Liverpoolu", id: 5 },
+  { title: "Byli piłkarze Liverpoolu w nowych klubach", id: 6 },
+  { title: "Trent Alexander-Arnold", id: 7 },
 ];
 
 const news = [
   {
-    title: "Liverpool interesuje się Lindstrømem ",
-    img: "./images/jesperlindstrom.jpg",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat natus molestiae.",
+    title: "Liverpool interesuje się Lindstrømem",
+    img: mainFoto,
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat natus molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit maiores harum velit numquam non quia ex recusandae nam enim pariatur odio ratione ipsa nemo, facere sequi doloribus quos libero dolore! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis cum repudiandae recusandae magnam, enim earum rem deleniti quo, maiores adipisci necessitatibus. Repellat nostrum ipsam illo dicta sunt minus quia voluptates.",
     data: "03.04.2023 09:31",
     main: true,
     id: 1,
   },
   {
-    title: "Falk: Liverpool rozmawia z ojcem Bellinghama   ",
-    img: "images/jesperlindstrom.jpg",
-    text: "Christian Falk potwierdził, że Liverpool prowadzi rozmowy z..",
+    title: "Richards - Jürgen Klopp jest zbyt lojalny",
+    img: mainFoto,
+    text: "Graeme Souness zakwestionował umiejętności przywódcze Virgila van Dijka.Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit maiores harum velit numquam non quia ex recusandae nam enim pariatur odio ratione ipsa nemo, facere sequi doloribus quos libero dolore! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis cum repudiandae recusandae magnam, enim earum rem deleniti quo, maiores adipisci necessitatibus. Repellat nostrum ipsam illo dicta sunt minus quia voluptates.",
     data: "03.04.2023 12:04, BarryAllen, Bild ",
     main: false,
     id: 2,
   },
   {
-    title: " Souness: Nie jestem pewny czy on jest liderem",
-    img: "images/jesperlindstrom.jpg",
-    text: "Graeme Souness zakwestionował umiejętności przywódcze Virgila van Dijka...",
+    title: "Robertson - Mecze z Chelsea zawsze są trudne",
+    img: mainFoto,
+    text: "Graeme Souness zakwestionował umiejętności przywódcze Virgila van Dijka.Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit maiores harum velit numquam non quia ex recusandae nam enim pariatur odio ratione ipsa nemo, facere sequi doloribus quos libero dolore! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis cum repudiandae recusandae magnam, enim earum rem deleniti quo, maiores adipisci necessitatibus. Repellat nostrum ipsam illo dicta sunt minus quia voluptates.",
     data: "03.04.2023 12:04, BarryAllen, Bild ",
     main: false,
     id: 3,
+  },
+  {
+    title: "Pamiętne bramki na Stamford Bridge - video",
+    img: mainFoto,
+    text: "Graeme Souness zakwestionował umiejętności przywódcze Virgila van Dijka.Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit maiores harum velit numquam non quia ex recusandae nam enim pariatur odio ratione ipsa nemo, facere sequi doloribus quos libero dolore! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis cum repudiandae recusandae magnam, enim earum rem deleniti quo, maiores adipisci necessitatibus. Repellat nostrum ipsam illo dicta sunt minus quia voluptates.",
+    data: "03.04.2023 12:04, BarryAllen, Bild ",
+    main: false,
+    id: 4,
+  },
+  {
+    title: "Souness - Nie jestem pewny czy on jest liderem",
+    img: mainFoto,
+    text: "Graeme Souness zakwestionował umiejętności przywódcze Virgila van Dijka. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit maiores harum velit numquam non quia ex recusandae nam enim pariatur odio ratione ipsa nemo, facere sequi doloribus quos libero dolore! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis cum repudiandae recusandae magnam, enim earum rem deleniti quo, maiores adipisci necessitatibus. Repellat nostrum ipsam illo dicta sunt minus quia voluptates.",
+    data: "03.04.2023 12:04, BarryAllen, Bild ",
+    main: false,
+    id: 5,
+  },
+  {
+    title: "Souness - Nie jestem pewny czy on jest liderem",
+    img: mainFoto,
+    text: "Graeme Souness zakwestionował umiejętności przywódcze Virgila van Dijka. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit maiores harum velit numquam non quia ex recusandae nam enim pariatur odio ratione ipsa nemo, facere sequi doloribus quos libero dolore! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis cum repudiandae recusandae magnam, enim earum rem deleniti quo, maiores adipisci necessitatibus. Repellat nostrum ipsam illo dicta sunt minus quia voluptates.",
+    data: "03.04.2023 12:04, BarryAllen, Bild ",
+    main: false,
+    id: 6,
+  },
+  {
+    title: "Souness - Nie jestem pewny czy on jest liderem",
+    img: mainFoto,
+    text: "Graeme Souness zakwestionował umiejętności przywódcze Virgila van Dijka. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit maiores harum velit numquam non quia ex recusandae nam enim pariatur odio ratione ipsa nemo, facere sequi doloribus quos libero dolore! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis cum repudiandae recusandae magnam, enim earum rem deleniti quo, maiores adipisci necessitatibus. Repellat nostrum ipsam illo dicta sunt minus quia voluptates.",
+    data: "03.04.2023 12:04, BarryAllen, Bild ",
+    main: false,
+    id: 7,
+  },
+  {
+    title: "Souness - Nie jestem pewny czy on jest liderem",
+    img: mainFoto,
+    text: "Graeme Souness zakwestionował umiejętności przywódcze Virgila van Dijka. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit maiores harum velit numquam non quia ex recusandae nam enim pariatur odio ratione ipsa nemo, facere sequi doloribus quos libero dolore! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis cum repudiandae recusandae magnam, enim earum rem deleniti quo, maiores adipisci necessitatibus. Repellat nostrum ipsam illo dicta sunt minus quia voluptates.",
+    data: "03.04.2023 12:04, BarryAllen, Bild ",
+    main: false,
+    id: 8,
+  },
+
+  {
+    title: "Souness - Nie jestem pewny czy on jest liderem",
+    img: mainFoto,
+    text: "Graeme Souness zakwestionował umiejętności przywódcze Virgila van Dijka. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit maiores harum velit numquam non quia ex recusandae nam enim pariatur odio ratione ipsa nemo, facere sequi doloribus quos libero dolore! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis cum repudiandae recusandae magnam, enim earum rem deleniti quo, maiores adipisci necessitatibus. Repellat nostrum ipsam illo dicta sunt minus quia voluptates.",
+    data: "03.04.2023 12:04, BarryAllen, Bild ",
+    main: false,
+    id: 9,
+  },
+  {
+    title: "Souness - Nie jestem pewny czy on jest liderem",
+    img: mainFoto,
+    text: "Graeme Souness zakwestionował umiejętności przywódcze Virgila van Dijka. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit maiores harum velit numquam non quia ex recusandae nam enim pariatur odio ratione ipsa nemo, facere sequi doloribus quos libero dolore! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis cum repudiandae recusandae magnam, enim earum rem deleniti quo, maiores adipisci necessitatibus. Repellat nostrum ipsam illo dicta sunt minus quia voluptates.",
+    data: "03.04.2023 12:04, BarryAllen, Bild ",
+    main: false,
+    id: 10,
+  },
+
+  {
+    title: "Souness - Nie jestem pewny czy on jest liderem",
+    img: mainFoto,
+    text: "Graeme Souness zakwestionował umiejętności przywódcze Virgila van Dijka. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit maiores harum velit numquam non quia ex recusandae nam enim pariatur odio ratione ipsa nemo, facere sequi doloribus quos libero dolore! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis cum repudiandae recusandae magnam, enim earum rem deleniti quo, maiores adipisci necessitatibus. Repellat nostrum ipsam illo dicta sunt minus quia voluptates.",
+    data: "03.04.2023 12:04, BarryAllen, Bild ",
+    main: false,
+    id: 11,
   },
 ];
 

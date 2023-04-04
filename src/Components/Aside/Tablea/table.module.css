@@ -1,0 +1,25 @@
+.wrapper .table_top {
+  background-color: #f4f3f3;
+  cursor: pointer;
+}
+.wrapper .table_top p {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  padding: 18px 0;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.wrapper .table_top p.selected {
+  font-size: 16px;
+}
+.wrapper .table_top .selected {
+  background-color: #fff;
+}
+
+.wrapper .table {
+  padding: 20px;
+  width: 100%;
+  background-color: #fff;
+}

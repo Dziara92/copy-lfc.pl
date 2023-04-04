@@ -1,0 +1,40 @@
+.wrapper {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 0 30px 0 70px;
+}
+
+.wrapper h3 {
+  margin: 40px 0 30px 0;
+  cursor: text;
+}
+.wrapper h3:hover {
+  text-decoration: none;
+}
+
+.wrapper ul {
+  margin-top: 40px;
+}
+
+.wrapper li {
+  list-style: none;
+  margin-bottom: 20px;
+  border-left: 4px solid #cf1a1a;
+  padding-left: 20px;
+}
+
+.wrapper li h5 {
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.wrapper li a {
+  text-decoration: none;
+  color: #363636;
+}
+
+.wrapper li p {
+  font-size: 12px;
+  color: #b8b8b8;
+}

@@ -16,7 +16,7 @@ const Aside = () => {
       <div className={style.content}>
         <ul>
           {forum.map((subject) => (
-            <li>{subject.title}</li>
+            <li key={subject.id}>{subject.title}</li>
           ))}
         </ul>
       </div>

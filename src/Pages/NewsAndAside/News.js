@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import RestNews from "./RestNews";
 import Aside from "./Aside";
 import { useGlobalContext } from "../../context";
@@ -16,8 +17,10 @@ const News = () => {
             <div key={id} className={`${style.news} ${style.main}`}>
               <img src={img} alt="main news foto" />
               <div className={style.content}>
-                <h3>{title} </h3>
-                <p className={style.shorttext}>{text}</p>
+                <Link to={title}>
+                  <h3>{title}</h3>
+                </Link>
+                <p className={style.shorttext}>{text.slice(0, 65)}...</p>
                 <p className={style.footer}>{data}</p>
               </div>
             </div>
@@ -25,15 +28,18 @@ const News = () => {
         );
       })}
       <div className={style.rest_news_and_aside}>
-        <div>
-          {news.map((restPost) => (
-            <RestNews key={restPost.id} {...restPost} />
-          ))}
+        <div className={style.left_div}>
+          {news
+            .map((restPost) => <RestNews key={restPost.id} {...restPost} />)
+            .slice(0, 6)}
         </div>
         <div className={style.aside}>
           <Aside />
         </div>
       </div>
+      <Link to="/archives">
+        <button className={style.btn_archiwum}>Archiwum</button>
+      </Link>
     </div>
   );
 };
