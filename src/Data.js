@@ -140,6 +140,80 @@ const table = [
     score: "34",
     id: 2,
   },
+  {
+    place: "3",
+    team: "MCI",
+    games: "32",
+    score: "34",
+    id: 3,
+  },
+  {
+    place: "4",
+    team: "NEW",
+    games: "24",
+    score: "34",
+    id: 4,
+  },
+  {
+    place: "5",
+    team: "TOT",
+    games: "24",
+    score: "34",
+    id: 5,
+  },
+  {
+    place: "6",
+    team: "MUN",
+    games: "24",
+    score: "34",
+    id: 6,
+  },
+  {
+    place: "7",
+    team: "MUN",
+    games: "24",
+    score: "34",
+    id: 7,
+  },
+  {
+    place: "8",
+    team: "MUN",
+    games: "24",
+    score: "34",
+    id: 8,
+  },
+];
+const goalScorers = [
+  {
+    place: "1",
+    player: "Mohamed Salah",
+    score: "28",
+    id: 1,
+  },
+  {
+    place: "2",
+    player: "Darwin Núñez",
+    score: "20",
+    id: 2,
+  },
+  {
+    place: "3",
+    player: "Roberto Firmino",
+    score: "17",
+    id: 3,
+  },
+  {
+    place: "4",
+    player: "Harvey Elliott",
+    score: "8",
+    id: 4,
+  },
+  {
+    place: "5",
+    player: "Luis Díaz",
+    score: "3",
+    id: 5,
+  },
 ];
 
-export { menuLeft, menuRight, news, forum, table };
+export { menuLeft, menuRight, news, forum, table, goalScorers };

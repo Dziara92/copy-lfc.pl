@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { menuLeft, menuRight, news, forum, table } from "./Data";
+import { menuLeft, menuRight, news, forum, table, goalScorers } from "./Data";
 
 const AppContext = React.createContext();
 
@@ -32,6 +32,7 @@ export const AppProvider = ({ children }) => {
         news,
         forum,
         table,
+        goalScorers,
       }}
     >
       {children}

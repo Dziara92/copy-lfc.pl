@@ -33,7 +33,7 @@ table {
 
 table td {
   border-bottom: 1px solid #dadada;
-  height: 35px;
+  height: 45px;
 }
 table td:nth-child(2) {
   width: 50%;
@@ -42,4 +42,14 @@ table td:nth-child(2),
 table td:nth-child(4) {
   font-weight: 500;
   text-transform: uppercase;
+}
+table td:nth-child(1),
+table td:nth-child(3) {
+  color: #969696;
+  text-transform: uppercase;
+}
+
+tbody tr td.player {
+  width: 70%;
+  text-transform: capitalize;
 }

@@ -1,0 +1,61 @@
+.wrapper {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.wrapper .match_top {
+  background-color: #161616;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.wrapper .match_top p {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #7e7e7e;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.wrapper .match_top p.active {
+  color: #f3f3f3;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.wrapper .content {
+  padding: 40px 30px;
+  background-color: #fff;
+}
+
+.wrapper .content .data {
+  font-family: DM Sans;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: #c4c3c3;
+}
+
+.wrapper .content .match {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: DM Sans;
+}
+.wrapper .content .match p {
+  margin: 10px 0;
+  font-size: 18px;
+  font-family: DM Sans;
+  font-weight: 500;
+}
+
+span.score {
+  color: #d41515;
+  font-size: 21px;
+  font-weight: 700;
+  margin-left: 15px;
+  display: inline;
+}
