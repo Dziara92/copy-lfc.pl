@@ -8,6 +8,7 @@ const Submenu = () => {
     location,
     page: { page, links = [] },
   } = useGlobalContext();
+
   const container = useRef(null);
 
   useEffect(() => {
@@ -24,6 +25,7 @@ const Submenu = () => {
       }
       ref={container}
     >
+      <div className={style.triangle}></div>
       {links.map((link, index) => {
         const { label, url } = link;
         return <li key={index}>{label}</li>;

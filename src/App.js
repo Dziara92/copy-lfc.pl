@@ -1,4 +1,4 @@
-import { Header, MeetingTeam, PageContent, Aside } from "./Components";
+import { Header, MeetingTeam, PageContent, Aside, Footer } from "./Components";
 import { News, SinglePost, About, Archives } from "./Pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -18,6 +18,7 @@ function App() {
         </Routes>
         <Aside />
       </PageContent>
+      <Footer />
     </BrowserRouter>
   );
 }

@@ -5,7 +5,16 @@
   display: none;
   min-width: 150px;
   padding: 20px;
-  background-color: aquamarine;
+  background-color: rgb(94, 1, 52);
+}
+
+.submenu .triangle {
+  top: -10px;
+  left: 0;
+  position: absolute;
+  border-bottom: 10px solid rgb(94, 1, 52);
+  border-left: 10px transparent;
+  border-right: 10px transparent;
 }
 
 .show {

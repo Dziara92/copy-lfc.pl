@@ -9,10 +9,13 @@ export const AppProvider = ({ children }) => {
   const [page, setPage] = useState({ page: "", links: [] });
 
   const openSubmenu = (text, coordinates) => {
+    setHoverSubmenu(false);
     const page = menuLeft.find((link) => link.page === text);
     setPage(page);
     setLocation(coordinates);
-    setHoverSubmenu(false); //powinno być true
+    if (page.links && page.links.length > 0) {
+      setHoverSubmenu(true);
+    }
   };
   const closeSubmenu = () => {
     setHoverSubmenu(false);

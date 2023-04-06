@@ -11,7 +11,7 @@
   height: 140px;
   position: relative;
 }
-span {
+.container span {
   display: block;
   width: 90%;
   height: 10px;

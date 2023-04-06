@@ -17,13 +17,13 @@ const Table = () => {
     <div className={style.wrapper}>
       <div className={style.table_top}>
         <p
-          className={isActive && style.selected}
+          className={isActive ? style.selected : null}
           onClick={() => setIsActive(true)}
         >
           Tabela
         </p>
         <p
-          className={!isActive && style.selected}
+          className={!isActive ? style.selected : null}
           onClick={() => setIsActive(false)}
         >
           Strzelcy
