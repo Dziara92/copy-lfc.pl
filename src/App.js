@@ -1,5 +1,5 @@
 import { Header, MeetingTeam, PageContent, Aside, Footer } from "./Components";
-import { News, SinglePost, About, Archives } from "./Pages";
+import { News, SinglePost, About, Archives, NewNews } from "./Pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
           <Route path="/:title" element={<SinglePost />} />
           <Route path="/about" element={<About />} />
           <Route path="/archives" element={<Archives />} />
-          <Route path="/registration" element={<div>rejstraca</div>} />
-          <Route path="*" element={<div>brak podstrony</div>} />
+          <Route path="/new_news" element={<NewNews />} />
+          <Route path="/*" element={<div>brak podstrony</div>} />
         </Routes>
         <Aside />
       </PageContent>

@@ -8,18 +8,23 @@ export const AppProvider = ({ children }) => {
   const [location, setLocation] = useState({});
   const [page, setPage] = useState({ page: "", links: [] });
 
-  const openSubmenu = (text, coordinates) => {
+  const handleSubmenu = (text, coordinates) => {
     setHoverSubmenu(false);
-    const page = menuLeft.find((link) => link.page === text);
-    setPage(page);
-    setLocation(coordinates);
+    const menuLeftpage = menuLeft.find((link) => link.page === text);
+    const menuRightpage = menuRight.find((link) => link.page === text);
+    if (menuLeftpage) {
+      setPage(menuLeftpage);
+    }
+    if (menuRightpage) {
+      setPage(menuRightpage);
+    }
+
     if (page.links && page.links.length > 0) {
+      setLocation(coordinates);
       setHoverSubmenu(true);
     }
   };
-  const closeSubmenu = () => {
-    setHoverSubmenu(false);
-  };
+  const closeSubmenu = () => {};
 
   return (
     <AppContext.Provider
@@ -28,7 +33,7 @@ export const AppProvider = ({ children }) => {
         menuRight,
         ishoverSubmenu,
         setHoverSubmenu,
-        openSubmenu,
+        handleSubmenu,
         closeSubmenu,
         location,
         page,

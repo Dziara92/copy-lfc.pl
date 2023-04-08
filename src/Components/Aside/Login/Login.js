@@ -43,6 +43,9 @@ const Login = () => {
         <div className={style.userLogin}>
           <p>Witaj jesteś zalogowany jako:</p>
           <h4>{user.name}</h4>
+          <Link to="/new_news">
+            <p>Napisz newsa</p>
+          </Link>
           <Btn clickHandler={handleLogOut}>Wyloguj</Btn>
         </div>
       ) : (

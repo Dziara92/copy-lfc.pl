@@ -14,10 +14,19 @@ const menuLeft = [
 ];
 
 const menuRight = [
-  { page: "Forum", links: [] },
+  {
+    page: "Forum",
+  },
   { page: "Galeria", links: [] },
   { page: "Sklep", links: [] },
-  { page: "Dla fanów", links: [] },
+  {
+    page: "Dla fanów",
+    links: [
+      { label: "Liga typerów", url: "/" },
+      { label: "Wyjazd na Anfild", url: "//" },
+      { label: "Quiz", url: "/" },
+    ],
+  },
   { page: "Redakcja", links: [] },
 ];
 

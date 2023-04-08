@@ -5,6 +5,7 @@ import style from "./submenu.module.css";
 const Submenu = () => {
   const {
     ishoverSubmenu,
+    setHoverSubmenu,
     location,
     page: { page, links = [] },
   } = useGlobalContext();
@@ -18,8 +19,23 @@ const Submenu = () => {
     submenu.style.top = `${bottom}px`;
   }, [location]);
 
+  const handleMouseLeave = (event) => {
+    const subMenu = container.current;
+    const result = subMenu.getBoundingClientRect();
+    const { clientX, clientY } = event;
+
+    if (
+      clientX < result.left - 1 ||
+      clientX < result.right + 1 ||
+      clientY < result.bottom - 1
+    ) {
+      setHoverSubmenu(false);
+    }
+  };
+
   return (
     <div
+      onMouseLeave={handleMouseLeave}
       className={
         ishoverSubmenu ? `${style.submenu} ${style.show}` : style.submenu
       }
